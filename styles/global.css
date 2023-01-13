@@ -45,3 +45,7 @@ main {
     display: flex;
     justify-content: center;
 }
+
+.image-section {
+    width: 10px;
+}

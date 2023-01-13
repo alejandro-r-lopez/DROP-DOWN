@@ -5,3 +5,7 @@ const frameDropdown = document.getElementById('frame-dropdown');
 const wallImage = document.getElementById('wall-image');
 const paintingImage = document.getElementById('painting-image');
 const frameImage = document.getElementById('frame-image');
+
+wallDropdown.addEventListener('change', () => {
+    wallImage.src = `./assets/${wallDropdown.value}-wall.png`;
+});
