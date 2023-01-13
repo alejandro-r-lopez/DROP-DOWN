@@ -57,7 +57,7 @@ header {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
 }
 
@@ -67,6 +67,10 @@ header {
     text-align: center;
     height: 20px;
     border: none;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: black;
+    outline: none;
 }
 
 .image-section {
@@ -74,7 +78,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 340px;
+    margin-top: 320px;
 }
 
 .wall-image {
@@ -102,8 +106,16 @@ header {
 }
 
 .phrase-section {
-    display: grid;
+    height: 500px;
     color: black;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    text-align: center;
+    border-radius: 80px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .phrase-input {
@@ -114,15 +126,21 @@ header {
     outline: none;
     text-indent: 20px;
     background: transparent;
+    position: absolute;
+    margin-top: 20px;
 }
 
 .phrase-button {
-    width: 30px;
+    width: 80px;
     height: 30px;
     border-radius: 15px;
     border: none;
     background-color: black;
     margin-left: 10px;
+    position: relative;
+    left: 260px;
+    color: white;
+    margin-top: 20px;
 }
 
 .count-section {
@@ -130,11 +148,12 @@ header {
     justify-content: space-around;
     align-items: center;
     color: white;
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(0, 0, 0);
     height: 40px;
     width: 100%;
     position: absolute;
     bottom: 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .log-button {
@@ -143,6 +162,9 @@ header {
     position: absolute;
     right: 100px;
     bottom: 80px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    color: white;
 }
 
 .hide {
