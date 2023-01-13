@@ -22,32 +22,30 @@
         <!-- add link for page specific css -->
     </head>
 
-    <body id="wall-background">
+    <body class="wall-background" id="wall-background">
         <main>
-            <section class="menu-names">
-                <h1>Choose Your Wall</h1>
-                <h1>Choose Your Art</h1>
-                <h1>Frame Your Painting</h1>
-            </section>
             <section class="drop-down" id="drop-down">
                 <select class="drop-style" id="wall-dropdown">
+                    <option>CHOOSE YOUR WALL</option>
                     <option value="white">White Wall</option>
                     <option value="dark">Dark Wall</option>
                     <option value="concrete">Concrete Wall</option>
                 </select>
                 <select class="drop-style" id="painting-dropdown">
+                    <option>CHOOSE YOUR ART</option>
                     <option value="wheat">Wheat Field</option>
                     <option value="night">Starry Night</option>
                     <option value="monet">Water Lilies</option>
                 </select>
                 <select class="drop-style" id="frame-dropdown">
+                    <option>CHOOSE YOUR FRAME</option>
                     <option value="simple">Simple Frame</option>
                     <option value="ornate">Ornate Frame</option>
                     <option value="royal">Royal Frame</option>
                 </select>
             </section>
 
-            <section class="image-section">
+            <section class="image-section hide" id="image-section">
                 <img class="painting-image" id="painting-image" />
                 <img class="frame-image" id="frame-image" />
             </section>
@@ -56,8 +54,9 @@
                 <input class="phrase-input" id="phrase-input" />
                 <button class="phrase-button" id="phrase-button"></button>
             </section>
+            <button class="log-button" id="log-button"></button>
 
-            <section class="phrase-section" id="phrase-section"></section>
+            <section class="phrase-section hide" id="phrase-section"></section>
 
             <section class="count-section" id="count-section">
                 <div>You have chosen <span id="wall-count">0</span> walls</div>

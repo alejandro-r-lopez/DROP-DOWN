@@ -3,6 +3,7 @@ const paintingDropdown = document.getElementById('painting-dropdown');
 const frameDropdown = document.getElementById('frame-dropdown');
 
 // const wallImage = document.getElementById('wall-image');
+const imageSection = document.getElementById('image-section');
 const wallBackground = document.getElementById('wall-background');
 const paintingImage = document.getElementById('painting-image');
 const frameImage = document.getElementById('frame-image');
@@ -15,6 +16,7 @@ const countSection = document.getElementById('count-section');
 const wallCountEl = document.getElementById('wall-count');
 const paintingCountEl = document.getElementById('painting-count');
 const frameCountEl = document.getElementById('frame-count');
+const logButton = document.getElementById('log-button');
 
 let phrases = [];
 let wallCount = 0;
@@ -22,6 +24,7 @@ let paintingCount = 0;
 let frameCount = 0;
 
 displayPhrase();
+removeClass();
 
 wallDropdown.addEventListener('change', () => {
     // wallImage.src = `./assets/${wallDropdown.value}-wall.png`;
@@ -66,3 +69,12 @@ function displayCount() {
     paintingCountEl.textContent = paintingCount;
     frameCountEl.textContent = frameCount;
 }
+
+function removeClass() {
+    imageSection.classList.remove('hide');
+}
+
+logButton.addEventListener('click', () => {
+    phraseSection.classList.toggle('hide');
+    imageSection.classList.toggle('hide');
+});
