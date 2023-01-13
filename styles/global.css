@@ -56,13 +56,13 @@ main {
 }
 
 .painting-image {
-    width: 200px;
+    width: 700px;
     display: block;
     position: absolute;
 }
 
 .frame-image {
-    width: 240px;
+    width: 800px;
     position: absolute;
 }
 
@@ -71,5 +71,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
+    margin-top: 340px;
+}
+
+.concrete-bg {
+    background-image: url('/assets/concrete-wall.png');
+}
+
+.dark-bg {
+    background-image: url('/assets/dark-wall.png');
+}
+
+.white-bg {
+    background-image: url('/assets/white-wall.png');
 }

@@ -2,7 +2,8 @@ const wallDropdown = document.getElementById('wall-dropdown');
 const paintingDropdown = document.getElementById('painting-dropdown');
 const frameDropdown = document.getElementById('frame-dropdown');
 
-const wallImage = document.getElementById('wall-image');
+// const wallImage = document.getElementById('wall-image');
+const wallBackground = document.getElementById('wall-background');
 const paintingImage = document.getElementById('painting-image');
 const frameImage = document.getElementById('frame-image');
 
@@ -15,7 +16,9 @@ let phrases = [];
 displayPhrase();
 
 wallDropdown.addEventListener('change', () => {
-    wallImage.src = `./assets/${wallDropdown.value}-wall.png`;
+    // wallImage.src = `./assets/${wallDropdown.value}-wall.png`;
+    wallBackground.classList.remove('concrete-bg', 'white-bg', 'dark-bg');
+    wallBackground.classList.add(`${wallDropdown.value}-bg`);
 });
 
 paintingDropdown.addEventListener('change', () => {
