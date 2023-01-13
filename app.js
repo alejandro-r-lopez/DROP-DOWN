@@ -8,6 +8,11 @@ const frameImage = document.getElementById('frame-image');
 
 const phraseInput = document.getElementById('phrase-input');
 const phraseButton = document.getElementById('phrase-button');
+const phraseSection = document.getElementById('phrase-section');
+
+let phrases = ['erb', 'wge'];
+
+displayPhrase();
 
 wallDropdown.addEventListener('change', () => {
     wallImage.src = `./assets/${wallDropdown.value}-wall.png`;
@@ -22,5 +27,19 @@ frameDropdown.addEventListener('change', () => {
 });
 
 phraseButton.addEventListener('click', () => {
-    console.log('click');
+    phrases.push(phraseInput.value);
+
+    displayPhrase();
 });
+
+function displayPhrase() {
+    phraseSection.textContent = '';
+
+    for (let phrase of phrases) {
+        const newPhrase = document.createElement('p');
+
+        newPhrase.textContent = phrase;
+
+        phraseSection.append(newPhrase);
+    }
+}
