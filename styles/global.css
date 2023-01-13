@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(147, 147, 147);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -33,43 +33,6 @@ header .logo {
 main {
     padding: 20px;
 }
-
-.drop-down {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    margin-top: 20px;
-}
-
-.input-section {
-    padding-top: 320px;
-    display: flex;
-    justify-content: center;
-}
-
-.wall-image {
-    position: absolute;
-}
-
-.painting-image {
-    width: 700px;
-    display: block;
-    position: absolute;
-}
-
-.frame-image {
-    width: 800px;
-    position: absolute;
-}
-
-.image-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 340px;
-}
-
 .concrete-bg {
     background-image: url('/assets/concrete-wall.png');
     background-size: cover;
@@ -88,12 +51,54 @@ main {
     background-repeat: no-repeat;
 }
 
+.menu-names {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.drop-down {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
 .drop-style {
     border-radius: 10px;
     width: 180px;
     text-align: center;
     height: 20px;
     border: none;
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 340px;
+}
+
+.wall-image {
+    position: absolute;
+}
+
+.painting-image {
+    width: 700px;
+    display: block;
+    position: absolute;
+}
+
+.frame-image {
+    width: 800px;
+    position: absolute;
+}
+
+.input-section {
+    padding-top: 320px;
+    display: flex;
+    justify-content: center;
 }
 
 .phrase-section {
@@ -122,6 +127,6 @@ main {
 .count-section {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 60px;
     color: white;
 }
