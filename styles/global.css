@@ -37,21 +37,17 @@ main {
 .drop-down {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .input-section {
+    padding-top: 320px;
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
 }
 
 .wall-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
     position: absolute;
 }
 
@@ -76,12 +72,56 @@ main {
 
 .concrete-bg {
     background-image: url('/assets/concrete-wall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .dark-bg {
     background-image: url('/assets/dark-wall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .white-bg {
     background-image: url('/assets/white-wall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.drop-style {
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    height: 20px;
+    border: none;
+}
+
+.phrase-section {
+    color: white;
+}
+
+.phrase-input {
+    width: 600px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 2px;
+    outline: none;
+    text-indent: 20px;
+    background: transparent;
+}
+
+.phrase-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    margin-left: 10px;
+}
+
+.count-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    color: white;
 }

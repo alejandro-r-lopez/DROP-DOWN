@@ -11,7 +11,15 @@ const phraseInput = document.getElementById('phrase-input');
 const phraseButton = document.getElementById('phrase-button');
 const phraseSection = document.getElementById('phrase-section');
 
+const countSection = document.getElementById('count-section');
+const wallCountEl = document.getElementById('wall-count');
+const paintingCountEl = document.getElementById('painting-count');
+const frameCountEl = document.getElementById('frame-count');
+
 let phrases = [];
+let wallCount = 0;
+let paintingCount = 0;
+let frameCount = 0;
 
 displayPhrase();
 
@@ -19,14 +27,20 @@ wallDropdown.addEventListener('change', () => {
     // wallImage.src = `./assets/${wallDropdown.value}-wall.png`;
     wallBackground.classList.remove('concrete-bg', 'white-bg', 'dark-bg');
     wallBackground.classList.add(`${wallDropdown.value}-bg`);
+    wallCount++;
+    displayCount();
 });
 
 paintingDropdown.addEventListener('change', () => {
     paintingImage.src = `./assets/${paintingDropdown.value}-painting.png`;
+    paintingCount++;
+    displayCount();
 });
 
 frameDropdown.addEventListener('change', () => {
     frameImage.src = `./assets/${frameDropdown.value}-frame.png`;
+    frameCount++;
+    displayCount();
 });
 
 phraseButton.addEventListener('click', () => {
@@ -45,4 +59,10 @@ function displayPhrase() {
 
         phraseSection.append(newPhrase);
     }
+}
+
+function displayCount() {
+    wallCountEl.textContent = wallCount;
+    paintingCountEl.textContent = paintingCount;
+    frameCountEl.textContent = frameCount;
 }
