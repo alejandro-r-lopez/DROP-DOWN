@@ -34,8 +34,11 @@ wallDropdown.addEventListener('change', () => {
     displayCount();
 });
 
+// paintingImage.src = 'assets/canvas-painting.png';
+
 paintingDropdown.addEventListener('change', () => {
     paintingImage.src = `./assets/${paintingDropdown.value}-painting.png`;
+    paintingImage.classList.remove('placeholder-image');
     paintingCount++;
     displayCount();
 });
@@ -50,6 +53,8 @@ phraseButton.addEventListener('click', () => {
     phrases.push(phraseInput.value);
 
     displayPhrase();
+
+    phraseInput.value = '';
 });
 
 function displayPhrase() {

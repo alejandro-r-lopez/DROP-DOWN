@@ -79,6 +79,9 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 320px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 32px;
+    font-weight: bolder;
 }
 
 .wall-image {
@@ -86,14 +89,21 @@ header {
 }
 
 .painting-image {
-    width: 700px;
+    width: 600px;
     display: block;
     position: absolute;
 }
 
 .frame-image {
-    width: 800px;
+    width: 700px;
     position: absolute;
+}
+
+.placeholder-image {
+    width: 600px;
+    height: 420px;
+    position: absolute;
+    border: dashed 10px black;
 }
 
 .input-section {
