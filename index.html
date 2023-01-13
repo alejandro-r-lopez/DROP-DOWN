@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <!-- title and favicon -->
-        <title>Web App</title>
+        <title>Frame a Painting</title>
         <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
         <!-- js -->
@@ -24,11 +24,7 @@
 
     <body>
         <main>
-            <section class="image-section">
-                <img class="image" id="wall-image" />
-                <img class="image" id="painting-image" />
-                <img class="image" id="frame-image" />
-            </section>
+            
             <section class="drop-down" id="drop-down">
                 <select id="wall-dropdown">
                     <option value="white">White Wall</option>
@@ -46,11 +42,15 @@
                     <option value="royal">Royal Frame</option>
                 </select>
             </section>
-
             <section id="phrase-section"></section>
                 <section class="input-section">
                     <input id="phrase-input" />
                     <button id="phrase-button"></button>
+                </section>
+                <section class="image-section">
+                    <img class="wall-image" id="wall-image" />
+                    <img class="painting-image" id="painting-image" />
+                    <img class="frame-image" id="frame-image" />
                 </section>
             </section>
         </main>

@@ -44,8 +44,32 @@ main {
 .input-section {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
-.image {
+.wall-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    position: absolute;
+}
+
+.painting-image {
     width: 200px;
+    display: block;
+    position: absolute;
+}
+
+.frame-image {
+    width: 240px;
+    position: absolute;
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
 }

@@ -10,7 +10,7 @@ const phraseInput = document.getElementById('phrase-input');
 const phraseButton = document.getElementById('phrase-button');
 const phraseSection = document.getElementById('phrase-section');
 
-let phrases = ['erb', 'wge'];
+let phrases = [];
 
 displayPhrase();
 
