@@ -77,4 +77,13 @@ function removeClass() {
 logButton.addEventListener('click', () => {
     phraseSection.classList.toggle('hide');
     imageSection.classList.toggle('hide');
+    toggleButtonPhrase();
 });
+
+function toggleButtonPhrase() {
+    if (logButton.innerHTML === 'ARTIST LOG') {
+        logButton.innerHTML = 'DESIGN';
+    } else {
+        logButton.innerHTML = 'ARTIST LOG';
+    }
+}

@@ -93,9 +93,12 @@ header {
 }
 
 .input-section {
-    padding-top: 320px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 200px;
+    left: 25%;
+    right: 25%;
 }
 
 .phrase-section {
@@ -132,6 +135,14 @@ header {
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+.log-button {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
 }
 
 .hide {
