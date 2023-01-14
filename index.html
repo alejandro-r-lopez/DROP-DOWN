@@ -24,6 +24,10 @@
             href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap"
+            rel="stylesheet"
+        />
         <!-- see https://fonts.google.com/ -->
 
         <!-- css -->
@@ -55,6 +59,8 @@
                 </select>
                 <select class="drop-style" id="frame-dropdown">
                     <option>choose your frame</option>
+                    <option value="wood">Wood Frame</option>
+                    <option value="black">Black Frame</option>
                     <option value="simple">Simple Frame</option>
                     <option value="ornate">Ornate Frame</option>
                     <option value="royal">Royal Frame</option>
@@ -73,10 +79,21 @@
             <section class="input-section">
                 <input class="phrase-input" id="phrase-input" />
                 <button class="phrase-button" id="phrase-button">SIGN</button>
+                <form class="color-choice">
+                    <p>Signature Color:&nbsp</p>
+                    <label>black:</label>
+                    <input type="radio" class="black" id="black" name="color" value="black" />
+                    <label>&nbsp &nbsp red:</label>
+                    <input type="radio" class="red" id="red" name="color" value="red" />
+                    <label>&nbsp &nbsp white:</label>
+                    <input type="radio" class="white" id="white" name="color" value="white" />
+                </form>
             </section>
+
             <div class="button-section">
                 <button class="log-button" id="log-button">ARTIST LOG</button>
             </div>
+
             <section class="phrase-section hide" id="phrase-section"></section>
 
             <section class="count-section" id="count-section">

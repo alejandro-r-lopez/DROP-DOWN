@@ -96,7 +96,7 @@ header {
 }
 
 .frame-image {
-    width: 700px;
+    width: 696px;
     position: absolute;
 }
 
@@ -147,11 +147,14 @@ header {
     border-radius: 15px;
     border: none;
     background-color: black;
-    margin-left: 10px;
     position: relative;
     left: 260px;
     color: white;
     margin-top: 20px;
+}
+
+.phrase-button:hover {
+    background-color: rgb(84, 84, 84);
 }
 
 .count-section {
@@ -184,9 +187,35 @@ header {
 
 .signature {
     position: relative;
-    top: 160px;
-    font-size: 24px;
-    left: 70px;
+    top: 154px;
+    font-size: 36px;
+    left: 56px;
     color: red;
-    font-family: 'Moon Dance', cursive;
+    font-family: 'Passions Conflict', cursive;
+}
+
+.color-choice {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    top: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    height: 30px;
+    padding: 14px;
+    margin-top: 20px;
+}
+.red {
+    accent-color: red;
+}
+
+.white {
+    accent-color: white;
+}
+
+.black {
+    accent-color: black;
 }

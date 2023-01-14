@@ -19,6 +19,9 @@ const frameCountEl = document.getElementById('frame-count');
 const logButton = document.getElementById('log-button');
 
 const signature = document.getElementById('signature');
+const blackColorOption = document.getElementById('black');
+const redColorOption = document.getElementById('red');
+const whiteColorOption = document.getElementById('white');
 
 let phrases = [];
 let wallCount = 0;
@@ -61,6 +64,24 @@ phraseButton.addEventListener('click', () => {
     phraseInput.value = '';
 });
 
+logButton.addEventListener('click', () => {
+    phraseSection.classList.toggle('hide');
+    imageSection.classList.toggle('hide');
+    toggleButtonPhrase();
+});
+
+blackColorOption.addEventListener('click', () => {
+    signature.style.color = 'black';
+});
+
+redColorOption.addEventListener('click', () => {
+    signature.style.color = 'red';
+});
+
+whiteColorOption.addEventListener('click', () => {
+    signature.style.color = 'white';
+});
+
 function displayPhrase() {
     phraseSection.textContent = '';
 
@@ -82,12 +103,6 @@ function displayCount() {
 function removeClass() {
     imageSection.classList.remove('hide');
 }
-
-logButton.addEventListener('click', () => {
-    phraseSection.classList.toggle('hide');
-    imageSection.classList.toggle('hide');
-    toggleButtonPhrase();
-});
 
 function toggleButtonPhrase() {
     if (logButton.innerHTML === 'ARTIST LOG') {
