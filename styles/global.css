@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(255, 255, 255);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -26,10 +26,198 @@ header {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-header .logo {
-    height: 100%;
+.wall-background {
+    background-image: url('/assets/canvas-wall.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Background Image Classes */
+
+.concrete-bg {
+    background-image: url('/assets/concrete-wall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-main {
-    padding: 20px;
+.dark-bg {
+    background-image: url('/assets/dark-wall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.white-bg {
+    background-image: url('/assets/white-wall.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*----------------------------------*/
+
+.drop-down {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.drop-style {
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    height: 20px;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    outline: none;
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 320px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.wall-image {
+    position: absolute;
+}
+
+.painting-image {
+    width: 562px;
+    display: block;
+    position: absolute;
+    justify-content: center;
+}
+
+.frame-image {
+    width: 696px;
+    position: absolute;
+}
+
+.placeholder-image {
+    width: 600px;
+    height: 420px;
+    position: absolute;
+    border: dashed 10px black;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 200px;
+    left: 25%;
+    right: 25%;
+}
+
+.phrase-section {
+    height: 500px;
+    color: black;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    text-align: center;
+    border-radius: 80px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.phrase-input {
+    width: 600px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 2px;
+    outline: none;
+    text-indent: 20px;
+    background: transparent;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.phrase-button {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    position: relative;
+    left: 260px;
+    color: white;
+    margin-top: 20px;
+}
+
+.phrase-button:hover {
+    background-color: rgb(84, 84, 84);
+}
+
+.count-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+}
+
+.log-button {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.signature {
+    position: relative;
+    top: 154px;
+    font-size: 36px;
+    left: 56px;
+    color: red;
+    font-family: 'Passions Conflict', cursive;
+}
+
+.color-choice {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    top: 50px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    height: 30px;
+    padding: 14px;
+    margin-top: 20px;
+}
+.red {
+    accent-color: red;
+}
+
+.white {
+    accent-color: white;
+}
+
+.black {
+    accent-color: black;
 }

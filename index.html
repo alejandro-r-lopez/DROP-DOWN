@@ -1,39 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Frame a Painting</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap"
+            rel="stylesheet"
+        />
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body class="wall-background" id="wall-background">
+        <main>
+            <section class="drop-down" id="drop-down">
+                <select class="drop-style" id="wall-dropdown">
+                    <option>choose your wall</option>
+                    <option value="white">White Wall</option>
+                    <option value="dark">Dark Wall</option>
+                    <option value="concrete">Concrete Wall</option>
+                </select>
+                <select class="drop-style" id="painting-dropdown">
+                    <option>choose your art</option>
+                    <option value="vangogh">The Starry Night</option>
+                    <option value="monet">Bridge over a Pond of Water Lilies</option>
+                    <option value="manet">The Luncheon on the Grass</option>
+                    <option value="picasso">The Young Ladies of Avignon</option>
+                    <option value="botticelli">The Birth of Venus</option>
+                    <option value="dali">The Persistence of Memory</option>
+                    <option value="hokusai">The Great Wave Off Kanagawa</option>
+                    <option value="renoir">Luncheon of the Boating Party</option>
+                    <option value="hopper">NightHawks</option>
+                </select>
+                <select class="drop-style" id="frame-dropdown">
+                    <option>choose your frame</option>
+                    <option value="wood">Wood Frame</option>
+                    <option value="black">Black Frame</option>
+                    <option value="simple">Simple Frame</option>
+                    <option value="ornate">Ornate Frame</option>
+                    <option value="royal">Royal Frame</option>
+                </select>
+            </section>
 
-</head>
+            <section class="image-section hide" id="image-section">
+                <img class="painting-image placeholder-image" id="painting-image" />
+                [art goes here]
+                <img class="frame-image" id="frame-image" />
+                <div id="signature" class="signature">
+                    <p></p>
+                </div>
+            </section>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
+            <section class="input-section">
+                <input class="phrase-input" id="phrase-input" />
+                <button class="phrase-button" id="phrase-button">SIGN</button>
+                <form class="color-choice">
+                    <p>Signature Color:&nbsp</p>
+                    <label>black:</label>
+                    <input type="radio" class="black" id="black" name="color" value="black" />
+                    <label>&nbsp &nbsp red:</label>
+                    <input type="radio" class="red" id="red" name="color" value="red" />
+                    <label>&nbsp &nbsp white:</label>
+                    <input type="radio" class="white" id="white" name="color" value="white" />
+                </form>
+            </section>
 
-    <main>
+            <div class="button-section">
+                <button class="log-button" id="log-button">ARTIST LOG</button>
+            </div>
 
-    </main>
+            <section class="phrase-section hide" id="phrase-section"></section>
 
-</body>
-
+            <section class="count-section" id="count-section">
+                <div>you have chosen <span id="wall-count">0</span> walls</div>
+                <div>you have curated <span id="painting-count">0</span> paintings</div>
+                <div>you have framed <span id="frame-count">0</span> paintings</div>
+            </section>
+        </main>
+    </body>
 </html>
