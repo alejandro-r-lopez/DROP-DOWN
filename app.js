@@ -18,6 +18,8 @@ const paintingCountEl = document.getElementById('painting-count');
 const frameCountEl = document.getElementById('frame-count');
 const logButton = document.getElementById('log-button');
 
+const signature = document.getElementById('signature');
+
 let phrases = [];
 let wallCount = 0;
 let paintingCount = 0;
@@ -53,6 +55,8 @@ phraseButton.addEventListener('click', () => {
     phrases.push(phraseInput.value);
 
     displayPhrase();
+
+    signArtwork();
 
     phraseInput.value = '';
 });
@@ -91,4 +95,8 @@ function toggleButtonPhrase() {
     } else {
         logButton.innerHTML = 'ARTIST LOG';
     }
+}
+
+function signArtwork() {
+    signature.textContent = phraseInput.value;
 }
